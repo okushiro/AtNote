@@ -18,15 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEJ-ca-1HT">
-                                <rect key="frame" x="97.5" y="358.5" width="180" height="50"/>
-                                <color key="backgroundColor" red="1" green="0.74383176849999999" blue="0.2390674028" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEJ-ca-1HT">
+                                <rect key="frame" x="137.5" y="333.5" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="7dL-Xt-vgJ"/>
-                                    <constraint firstAttribute="width" constant="180" id="9Ec-bJ-fES"/>
+                                    <constraint firstAttribute="height" constant="100" id="bab-3p-JA4"/>
+                                    <constraint firstAttribute="width" constant="100" id="pqX-32-MxP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                                <state key="normal" title="位置情報取得"/>
+                                <state key="normal" image="searchBtn"/>
                                 <connections>
                                     <action selector="didTouchLocationBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WGr-jx-gXp"/>
                                 </connections>
@@ -38,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nI2-9U-3Q3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="1SV-XT-beh"/>
                             <constraint firstItem="kEJ-ca-1HT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GLI-qB-4tv"/>
@@ -207,7 +205,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="C5n-AP-LJd" firstAttribute="leading" secondItem="ZcM-0F-s7G" secondAttribute="leading" constant="40" id="69m-j4-SqX"/>
                             <constraint firstItem="4hc-Lr-hFJ" firstAttribute="top" secondItem="C5n-AP-LJd" secondAttribute="bottom" constant="80" id="CYY-Aa-LYI"/>
@@ -249,4 +247,7 @@
             <point key="canvasLocation" x="-284" y="108.39580209895054"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="searchBtn" width="256" height="256"/>
+    </resources>
 </document>

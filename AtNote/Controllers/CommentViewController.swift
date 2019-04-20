@@ -27,7 +27,9 @@ class CommentViewController: UIViewController {
         var ref: DocumentReference?
         ref = db.collection("shops").document("\(noteList[selectRow])").collection("note").addDocument(data: [
             "text": CommentTextView.text,
-            "picture": ""
+            "picture": "",
+            "movie": "",
+            "createTime":Date()
         ]) { err in
             if let err = err {
                 print("Error adding document: \(err)")
