@@ -18,12 +18,19 @@ class NoteListTableViewController: UITableViewController, CLLocationManagerDeleg
     var currentLatitude : Double = 0
     var currentLongitude : Double = 0
     let userDefaults = UserDefaults.standard
+    
+    fileprivate let refreshCtl = UIRefreshControl()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //位置情報を取得
         setupLocationManager()
+        
+        tableView.refreshControl = refreshCtl
+        refreshCtl.addTarget(self, action:
+            #selector(handleRefreshControl),
+                             for: .valueChanged)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -111,12 +118,8 @@ class NoteListTableViewController: UITableViewController, CLLocationManagerDeleg
                     let latDiff = fabs(noteLatitude - self.currentLatitude)
                     let lonDiff = fabs(noteLongitude - self.currentLongitude)
                     
-                    print(latDiff)
-                    print(lonDiff)
-                    
-                    if latDiff < 0.005 && lonDiff < 0.05 {
+                    if latDiff < 0.001 && lonDiff < 0.01 {
                         self.noteList.append(targets![i].data()["name"]! as! String)
-                        print(self.noteList)
                     }
                 }
             }
@@ -126,6 +129,17 @@ class NoteListTableViewController: UITableViewController, CLLocationManagerDeleg
         }
     }
 
+    @objc func handleRefreshControl() {
+        // Update your content…
+        setupLocationManager()
+        
+        // Dismiss the refresh control.
+        DispatchQueue.main.async {
+            self.refreshCtl.endRefreshing()
+        }
+    }
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

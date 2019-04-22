@@ -29,6 +29,7 @@ class CommentViewController: UIViewController {
             "text": CommentTextView.text,
             "picture": "",
             "movie": "",
+            "time": "",
             "createTime":Date()
         ]) { err in
             if let err = err {

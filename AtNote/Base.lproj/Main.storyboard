@@ -95,7 +95,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9F9-Qp-NPB">
                                 <rect key="frame" x="0.0" y="64" width="375" height="553"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XtM-Nf-1BM">
                                     <size key="itemSize" width="175" height="200"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -110,7 +110,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="172" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AA9-Tk-qQQ">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AA9-Tk-qQQ">
                                                     <rect key="frame" x="0.0" y="0.0" width="172" height="200"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -121,8 +121,19 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="185" height="200"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMg-Wu-dbD">
+                                                    <rect key="frame" x="38" y="148" width="96" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottomMargin" secondItem="MMg-Wu-dbD" secondAttribute="bottom" constant="20" id="YPL-Yp-Vgh"/>
+                                            <constraint firstItem="MMg-Wu-dbD" firstAttribute="leading" secondItem="TD8-K0-duA" secondAttribute="leadingMargin" constant="30" id="Zgj-cu-nOr"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="MMg-Wu-dbD" secondAttribute="trailing" constant="30" id="sip-kT-h2c"/>
+                                        </constraints>
                                         <size key="customSize" width="172" height="200"/>
                                     </collectionViewCell>
                                 </cells>
@@ -138,7 +149,7 @@
                                             <segue destination="h2b-un-Cbn" kind="show" id="pkk-rR-FCu"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="写真" id="RjH-UX-929" userLabel="picture">
+                                    <barButtonItem title="カメラ" id="RjH-UX-929" userLabel="picture">
                                         <connections>
                                             <action selector="didTouchPictureBtn:" destination="wgs-HH-0J2" id="KNg-8H-iFC"/>
                                         </connections>
