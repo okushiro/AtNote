@@ -11,8 +11,20 @@ import PKHUD
 
 class ViewController: UIViewController {
     
+    
+    @IBOutlet weak var searchBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //ボタン設定
+        searchBtn.frame = CGRect(x: 100, y: 100, width: 180, height: 60)
+        searchBtn.center = self.view.center
+        searchBtn.backgroundColor = .orange
+        searchBtn.setTitleColor(UIColor.black, for: UIControl.State.normal)
+        searchBtn.layer.borderWidth = 2
+        searchBtn.layer.borderColor = UIColor.brown.cgColor
+        searchBtn.layer.cornerRadius = 10
  
     }
 

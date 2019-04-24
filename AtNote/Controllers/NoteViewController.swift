@@ -21,6 +21,8 @@ class NoteViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     let storage = Storage.storage()
     
+    let userDefaults = UserDefaults.standard
+    
     let noteList: [String] = UserDefaults.standard.array(forKey: "noteList") as! [String]
     let selectRow = UserDefaults.standard.integer(forKey: "selectRow")
     
@@ -81,24 +83,10 @@ class NoteViewController: UIViewController, UICollectionViewDelegate, UICollecti
         print("タップしました")
         if cellMovie[indexPath.row] != "" {
             HUD.show(.progress)
-            let storageRef = storage.reference()
-            let reference = storageRef.child("movie/\(cellMovie[indexPath.row])")
+            let pass = "movie/\(cellMovie[indexPath.row])"
+            userDefaults.set(pass, forKey: "pass")
+            performSegue(withIdentifier: "toMovie", sender: nil)
             
-            reference.downloadURL { url, error in
-                if error == nil {
-                    let player = AVPlayer(url: url!)
-                    
-                    // レイヤーの追加
-                    let playerLayer = AVPlayerLayer(player: player)
-                    playerLayer.frame = self.view.bounds
-                    self.view.layer.addSublayer(playerLayer)
-                    
-                    // 再生
-                    HUD.hide()
-                    player.play()
-                    
-                }
-            }
         }
         
     }
