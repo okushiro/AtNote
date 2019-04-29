@@ -24,9 +24,18 @@ class CommentViewController: UIViewController {
     }
     
     @IBAction func didTouchCommentBtn(_ sender: Any) {
+        
+        guard let title = CommentTextView.text else {
+            return
+        }
+        if (title.isEmpty) {
+            showAlert("コメントを入力して下さい。")
+            return
+        }
+        
         var ref: DocumentReference?
         ref = db.collection("shops").document("\(noteList[selectRow])").collection("note").addDocument(data: [
-            "text": CommentTextView.text,
+            "text": title,
             "picture": "",
             "movie": "",
             "time": "",
@@ -44,6 +53,7 @@ class CommentViewController: UIViewController {
         
     }
     
+    //キーボードを閉じる
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		76A9A037637A50B73EF6A6BE /* Pods_AtNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C60898D5731EA2A345BDE4 /* Pods_AtNote.framework */; };
 		D464663B2270828700AEA07C /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D464663A2270828700AEA07C /* MovieViewController.swift */; };
+		D464665C2276B75A00AEA07C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D464665B2276B75900AEA07C /* UIViewController.swift */; };
+		D464665E2276B80800AEA07C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D464665D2276B80800AEA07C /* UIImage.swift */; };
 		D47B9C4722538CA00061BB45 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47B9C4622538CA00061BB45 /* NoteViewController.swift */; };
 		D49EBFBE223CFE3F00DD3782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49EBFBD223CFE3F00DD3782 /* AppDelegate.swift */; };
 		D49EBFC0223CFE3F00DD3782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49EBFBF223CFE3F00DD3782 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 		42FFF4F63A2796A7FC64F0C1 /* Pods-AtNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtNote.debug.xcconfig"; path = "Target Support Files/Pods-AtNote/Pods-AtNote.debug.xcconfig"; sourceTree = "<group>"; };
 		46C60898D5731EA2A345BDE4 /* Pods_AtNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AtNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D464663A2270828700AEA07C /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		D464665B2276B75900AEA07C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		D464665D2276B80800AEA07C /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		D47B9C4622538CA00061BB45 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		D49EBFBA223CFE3F00DD3782 /* AtNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49EBFBD223CFE3F00DD3782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D464665A2276B6FA00AEA07C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D464665B2276B75900AEA07C /* UIViewController.swift */,
+				D464665D2276B80800AEA07C /* UIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D49EBFB1223CFE3F00DD3782 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +101,7 @@
 		D49EBFBC223CFE3F00DD3782 /* AtNote */ = {
 			isa = PBXGroup;
 			children = (
+				D464665A2276B6FA00AEA07C /* Extensions */,
 				D49EBFCF223D087900DD3782 /* Controllers */,
 				D49EBFBD223CFE3F00DD3782 /* AppDelegate.swift */,
 				D49EBFC1223CFE3F00DD3782 /* Main.storyboard */,
@@ -252,6 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D464665C2276B75A00AEA07C /* UIViewController.swift in Sources */,
+				D464665E2276B80800AEA07C /* UIImage.swift in Sources */,
 				D4A74D61225B97F8008ED0CB /* CommentViewController.swift in Sources */,
 				D47B9C4722538CA00061BB45 /* NoteViewController.swift in Sources */,
 				D49EBFD1223DE1F400DD3782 /* NoteListTableViewController.swift in Sources */,

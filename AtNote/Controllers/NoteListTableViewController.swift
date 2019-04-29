@@ -79,6 +79,7 @@ class NoteListTableViewController: UITableViewController, CLLocationManagerDeleg
         //選択した行
         userDefaults.set(indexPath.row, forKey: "selectRow")
         //ページ遷移
+        HUD.show(.progress)
         performSegue(withIdentifier: "toNote", sender: nil)
     }
     
@@ -94,6 +95,8 @@ class NoteListTableViewController: UITableViewController, CLLocationManagerDeleg
             locationManager.delegate = self
             locationManager.distanceFilter = 10000
             locationManager.startUpdatingLocation()
+        } else {
+            HUD.hide()
         }
     }
     
@@ -107,6 +110,10 @@ class NoteListTableViewController: UITableViewController, CLLocationManagerDeleg
         let db = Firestore.firestore()
         
         db.collection("shops").getDocuments { (snapshot, error) in
+            if let error = error{
+                print(error)
+                HUD.hide()
+            }
             let targets = snapshot?.documents
             self.noteList = []
             if let length = targets?.count{
