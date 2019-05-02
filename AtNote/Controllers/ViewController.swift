@@ -25,6 +25,12 @@ class ViewController: UIViewController {
         searchBtn.layer.borderWidth = 2
         searchBtn.layer.borderColor = UIColor.brown.cgColor
         searchBtn.layer.cornerRadius = 10
+        
+        //背景画像
+        let bg = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
+        bg.image = UIImage(named: "cafe.jpg")
+        bg.layer.zPosition = -1
+        self.view.addSubview(bg)
  
     }
 
