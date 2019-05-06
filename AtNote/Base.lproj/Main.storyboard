@@ -200,7 +200,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="C5n-AP-LJd">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="C5n-AP-LJd">
                                 <rect key="frame" x="40" y="254" width="295" height="150"/>
                                 <color key="backgroundColor" red="1" green="0.79035282135009766" blue="0.79531365633010864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -210,13 +210,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hc-Lr-hFJ">
-                                <rect key="frame" x="157.5" y="484" width="60" height="40"/>
+                                <rect key="frame" x="147.5" y="484" width="80" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="7a5-er-cfU"/>
-                                    <constraint firstAttribute="height" constant="40" id="d6S-Au-fUH"/>
+                                    <constraint firstAttribute="width" constant="80" id="7a5-er-cfU"/>
+                                    <constraint firstAttribute="height" constant="50" id="d6S-Au-fUH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                 <state key="normal" title="投稿">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
