@@ -33,12 +33,17 @@ class CommentViewController: UIViewController {
             return
         }
         
+        guard let uid = User.shared.getUid() else{
+            return
+        }
+        
         var ref: DocumentReference?
         ref = db.collection("shops").document("\(noteList[selectRow])").collection("note").addDocument(data: [
             "text": title,
             "picture": "",
             "movie": "",
             "time": "",
+            "userID": uid,
             "createTime":Date()
         ]) { err in
             if let err = err {

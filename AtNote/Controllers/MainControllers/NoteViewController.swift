@@ -197,12 +197,17 @@ class NoteViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 reference.putData(data, metadata: nil, completion: { metaData, error in
                     
                     //firestoreにも保存
+                    guard let uid = User.shared.getUid() else{
+                        return
+                    }
+                    
                     var ref: DocumentReference?
                     ref = self.db.collection("shops").document("\(self.noteList[self.selectRow])").collection("note").addDocument(data: [
                         "text": "",
                         "picture": path,
                         "movie": "",
                         "time": "",
+                        "userID": uid,
                         "createTime":Date()
                     ]) { err in
                         if let err = err {
