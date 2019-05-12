@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        HUD.hide()
+        
         //ボタン設定
         searchBtn.frame = CGRect(x: 100, y: 100, width: 180, height: 60)
         searchBtn.center = self.view.center
@@ -41,6 +43,19 @@ class ViewController: UIViewController {
         //ノートリストへ遷移
         self.performSegue(withIdentifier: "toNoteList", sender: nil)
         
+    }
+    
+    //ログアウト
+    @IBAction func didTouchLogoutBtn(_ sender: Any) {
+        User.shared.logout()
+        //Storyboardを指定
+        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+        //Viewcontrollerを指定
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        //rootViewControllerに入れる
+        appDelegate.window?.rootViewController = initialViewController
     }
     
     override func didReceiveMemoryWarning() {

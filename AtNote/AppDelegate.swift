@@ -20,6 +20,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FirebaseApp.configure()
         
+        // ログインしていたら
+        if User.shared.isLogin() {
+            //Storyboardを指定
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            //Viewcontrollerを指定
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "MainNavigationController")
+            //rootViewControllerに入れる
+            self.window?.rootViewController = initialViewController
+        }else{
+            //Storyboardを指定
+            let storyboard = UIStoryboard(name: "Login", bundle: nil)
+            //Viewcontrollerを指定
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+            //rootViewControllerに入れる
+            self.window?.rootViewController = initialViewController
+        }
         return true
     }
 
