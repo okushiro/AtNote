@@ -34,8 +34,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nI2-9U-3Q3">
-                                <rect key="frame" x="97.5" y="216" width="180.5" height="75"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <rect key="frame" x="68.5" y="204.5" width="238" height="98.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="80"/>
                                 <color key="textColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

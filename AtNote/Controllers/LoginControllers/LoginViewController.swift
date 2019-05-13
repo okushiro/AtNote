@@ -89,4 +89,9 @@ class LoginViewController: UIViewController, UserDelegate {
         }
         return Credential(email: email, password: password)
     }
+    
+    //キーボードを閉じる
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }

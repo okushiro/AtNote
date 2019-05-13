@@ -47,15 +47,27 @@ class ViewController: UIViewController {
     
     //ログアウト
     @IBAction func didTouchLogoutBtn(_ sender: Any) {
-        User.shared.logout()
-        //Storyboardを指定
-        let storyboard = UIStoryboard(name: "Login", bundle: nil)
-        //Viewcontrollerを指定
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        //rootViewControllerに入れる
-        appDelegate.window?.rootViewController = initialViewController
+        let alertController = UIAlertController(title: "ログアウトします", message: "" , preferredStyle: UIAlertController.Style.alert)
+        let action = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { (action) -> Void in
+        
+            User.shared.logout()
+            //Storyboardを指定
+            let storyboard = UIStoryboard(name: "Login", bundle: nil)
+            //Viewcontrollerを指定
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+            
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            //rootViewControllerに入れる
+            appDelegate.window?.rootViewController = initialViewController
+            
+        }
+        let cancel = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.default) { (action) -> Void in
+        }
+        alertController.addAction(action)
+        alertController.addAction(cancel)
+        self.present(alertController, animated: true, completion: nil)
+        
     }
     
     override func didReceiveMemoryWarning() {
