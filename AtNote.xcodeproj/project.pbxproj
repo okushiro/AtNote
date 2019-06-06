@@ -17,6 +17,8 @@
 		D42A38D5228705E900B02205 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42A38D4228705E900B02205 /* Credential.swift */; };
 		D42A38D72287062400B02205 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42A38D62287062400B02205 /* User.swift */; };
 		D42A38D9228737C900B02205 /* Login2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42A38D8228737C900B02205 /* Login2ViewController.swift */; };
+		D42A39452291479500B02205 /* yomogifont.otf in Resources */ = {isa = PBXBuildFile; fileRef = D42A3944229145E600B02205 /* yomogifont.otf */; };
+		D42A3947229191B700B02205 /* JKG-M_3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D42A3946229191AD00B02205 /* JKG-M_3.ttf */; };
 		D464663B2270828700AEA07C /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D464663A2270828700AEA07C /* MovieViewController.swift */; };
 		D464665C2276B75A00AEA07C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D464665B2276B75900AEA07C /* UIViewController.swift */; };
 		D464665E2276B80800AEA07C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D464665D2276B80800AEA07C /* UIImage.swift */; };
@@ -43,6 +45,8 @@
 		D42A38D4228705E900B02205 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		D42A38D62287062400B02205 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D42A38D8228737C900B02205 /* Login2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login2ViewController.swift; sourceTree = "<group>"; };
+		D42A3944229145E600B02205 /* yomogifont.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = yomogifont.otf; sourceTree = "<group>"; };
+		D42A3946229191AD00B02205 /* JKG-M_3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JKG-M_3.ttf"; sourceTree = "<group>"; };
 		D464663A2270828700AEA07C /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		D464665B2276B75900AEA07C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		D464665D2276B80800AEA07C /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 				D464665A2276B6FA00AEA07C /* Extensions */,
 				D49EBFCF223D087900DD3782 /* Controllers */,
 				D49EBFBD223CFE3F00DD3782 /* AppDelegate.swift */,
+				D42A3944229145E600B02205 /* yomogifont.otf */,
+				D42A3946229191AD00B02205 /* JKG-M_3.ttf */,
 				D49EBFC4223CFE4200DD3782 /* Assets.xcassets */,
 				D49EBFC6223CFE4200DD3782 /* LaunchScreen.storyboard */,
 				D4FA7FE7223E4BEF00E626BC /* GoogleService-Info.plist */,
@@ -246,6 +252,8 @@
 			files = (
 				D49EBFC8223CFE4200DD3782 /* LaunchScreen.storyboard in Resources */,
 				D49EBFC5223CFE4200DD3782 /* Assets.xcassets in Resources */,
+				D42A39452291479500B02205 /* yomogifont.otf in Resources */,
+				D42A3947229191B700B02205 /* JKG-M_3.ttf in Resources */,
 				D4FA7FE8223E4BEF00E626BC /* GoogleService-Info.plist in Resources */,
 				D42A38C72284980900B02205 /* Login.storyboard in Resources */,
 				D49EBFC3223CFE3F00DD3782 /* Main.storyboard in Resources */,

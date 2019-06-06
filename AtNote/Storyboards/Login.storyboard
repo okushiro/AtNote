@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vPv-yI-fUK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vPv-yI-fUK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -60,6 +60,11 @@
                                         <state key="normal" title="ログイン">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="didTouchLoginBtn:" destination="vPv-yI-fUK" eventType="touchUpInside" id="NBJ-C0-BZa"/>
                                         </connections>
@@ -75,6 +80,11 @@
                                         <state key="normal" title="新規登録">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="didTouchRegisterBtn:" destination="vPv-yI-fUK" eventType="touchUpInside" id="ddA-z7-FBW"/>
                                         </connections>
@@ -127,6 +137,11 @@
                                 <state key="normal" title="次へ">
                                     <color key="titleColor" red="0.2487640814" green="0.15819606210000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="cRf-D6-DTk" kind="show" id="4yG-4G-8jk"/>
                                 </connections>
@@ -156,6 +171,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                 <state key="normal" title="タイトルへ戻る">
                                     <color key="titleColor" red="0.2487640814" green="0.15819606210000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="vPv-yI-fUK" kind="show" id="LDR-5o-rIx"/>
                                 </connections>
@@ -205,6 +225,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                         <state key="normal" title="男性">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="didTouchMan:" destination="cRf-D6-DTk" eventType="touchUpInside" id="v18-DP-qRV"/>
                                         </connections>
@@ -220,6 +245,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                         <state key="normal" title="女性">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="didTouchWoman:" destination="cRf-D6-DTk" eventType="touchUpInside" id="WT0-Us-6bR"/>
                                         </connections>
@@ -273,6 +303,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                         <state key="normal" title="10代以下">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="didTouch10:" destination="U8w-Tq-c2d" eventType="touchUpInside" id="GJa-C7-Hhk"/>
                                         </connections>
@@ -288,6 +323,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                         <state key="normal" title="20代">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="didTouch20:" destination="U8w-Tq-c2d" eventType="touchUpInside" id="uDT-EO-bpB"/>
                                         </connections>
@@ -308,6 +348,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                         <state key="normal" title="30代">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="didTouch30:" destination="U8w-Tq-c2d" eventType="touchUpInside" id="VtY-27-cIP"/>
                                         </connections>
@@ -323,6 +368,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                         <state key="normal" title="40代">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="didTouch40:" destination="U8w-Tq-c2d" eventType="touchUpInside" id="FZC-W1-Kna"/>
                                         </connections>
@@ -343,6 +393,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                         <state key="normal" title="50代">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="didTouch50:" destination="U8w-Tq-c2d" eventType="touchUpInside" id="IrJ-Uq-9Yd"/>
                                         </connections>
@@ -358,6 +413,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                         <state key="normal" title="60代以上">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="didTouch60:" destination="U8w-Tq-c2d" eventType="touchUpInside" id="cQ6-lu-GtE"/>
                                         </connections>
@@ -412,6 +472,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                 <state key="normal" title="Facebook">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="didTouchFacebook:" destination="jUT-ly-jEU" eventType="touchUpInside" id="UdH-6b-rAe"/>
                                 </connections>
@@ -427,6 +492,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                 <state key="normal" title="Twitter">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="didTouchTwitter:" destination="jUT-ly-jEU" eventType="touchUpInside" id="DCk-Qy-XPs"/>
                                 </connections>
@@ -442,6 +512,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                 <state key="normal" title="Tik Tok">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="didTouchTikTok:" destination="jUT-ly-jEU" eventType="touchUpInside" id="RzJ-Zc-sQU"/>
                                 </connections>
@@ -457,6 +532,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                 <state key="normal" title="この中にはない">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="didTouchOther:" destination="jUT-ly-jEU" eventType="touchUpInside" id="u1s-jz-pZD"/>
                                 </connections>
@@ -472,6 +552,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                 <state key="normal" title="Instagram">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="didTouchInstagram:" destination="jUT-ly-jEU" eventType="touchUpInside" id="njz-Xh-EoD"/>
                                 </connections>
@@ -585,6 +670,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                         <state key="normal" title="これでOK">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="didTouchCompleteBtn:" destination="xYe-Fh-KGN" eventType="touchUpInside" id="Ad5-BS-j6c"/>
                                         </connections>
@@ -600,6 +690,11 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                                         <state key="normal" title="やり直す">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="OBR-ck-2JW" kind="show" id="HMc-jV-3r4"/>
                                         </connections>
@@ -637,7 +732,7 @@ ERERERHigKgN44Gd44KM44Ge44KM44CB5b2T44Gm44Gv44G+44KL44KC44Gu44KS44Gy44Go44Gk6YG4
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69f-pF-aAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3409" y="116"/>
+            <point key="canvasLocation" x="3408.8000000000002" y="115.59220389805098"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

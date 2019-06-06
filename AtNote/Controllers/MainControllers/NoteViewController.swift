@@ -78,15 +78,12 @@ class NoteViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     //セルを選択した時
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("タップしました")
         if cellMovie[indexPath.row] != "" {
             HUD.show(.progress)
             let pass = "movie/\(cellMovie[indexPath.row])"
             userDefaults.set(pass, forKey: "pass")
             performSegue(withIdentifier: "toMovie", sender: nil)
-            
         }
-        
     }
     
     //セルの設定
@@ -116,6 +113,7 @@ class NoteViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         return cell
     }
+    
     
 /////////////////////////////////////////////////////////////////////////////////////
 
